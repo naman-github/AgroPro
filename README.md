@@ -1,4 +1,5 @@
 # AgroPro 🌿
+
 #### A simple ML and DL based website which recommends the best crop to grow, fertilizers to use and the diseases caught by your crops.
 
 ## MOTIVATION 💪
@@ -19,8 +20,7 @@
 - [Fertilizer suggestion dataset](https://github.com/Gladiator07/Harvestify/blob/master/Data-processed/fertilizer.csv) (custom built dataset)
 - [Disease detection dataset](https://www.kaggle.com/vipoooool/new-plant-diseases-dataset)
 
-## Notebooks 📓
-##### I have also published the corresponding code on Kaggle Notebooks.
+## Notebooks 
 - [Crop Recommendation](https://www.kaggle.com/atharvaingle/what-crop-to-grow)
 - [Disease Detection](https://www.kaggle.com/atharvaingle/plant-disease-classification-resnet-99-2)
 
@@ -57,3 +57,23 @@ Note that, for now it only supports following crops
 <details>
   <summary>Supported crops
 </summary>
+
+- Apple
+- Blueberry
+- Cherry
+- Corn
+- Grape
+- Pepper
+- Orange
+- Peach
+- Potato
+- Soybean
+- Strawberry
+- Tomato
+- Squash
+- Raspberry
+</details>
+
+## Contact 📞
+
+#### If you have any doubt or want to contribute feel free to email me or hit me up on [LinkedIn](https://www.linkedin.com/in/naman-s-599536112/)
