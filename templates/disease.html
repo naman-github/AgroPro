@@ -1,0 +1,116 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+  html body {
+    background-color: rgb(206, 206, 228);
+  }
+</style>
+<!--Form Section-->
+<br /><br />
+<h2 style="text-align: center; margin: 0px; color: black">
+  <b>Get informed advice on Disease Detection</b>
+</h2>
+<br />
+
+
+<style>
+  .main-agile {
+    position: relative;
+}
+.agile-top {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    margin-top: 30px;
+}
+@media(max-width: 768px){
+    .agile-top {
+        margin-top: 20px;
+    }
+    .agile-top {
+        margin-top: 10px;
+    }
+    .agile-top {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+}
+
+}
+</style>
+
+
+<div class="main-agile">
+  <div class="slider">
+    <div class="agile-top">
+      <div class="col-xs-4 logo" >
+        <h1>
+          <a href="index.html" style="color:black" >
+
+<!--            <span>A</span>gro <span>P</span>ro-->
+            </a>
+        </h1>
+      </div>
+
+      
+
+<div
+  style="
+    width: 350px;
+    height: 40rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;
+  "
+>
+  <form method="POST" enctype=multipart/form-data>
+    <div class="form-group">
+      <input type="file" name="file" class="form-control-file" id="inputfile" onchange="preview_image(event)" style="font-weight: bold;">
+    <br>
+    <br>
+    <img id="output-image" class="rounded mx-auto d-block" />
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-weight: bold;">Predict</button>
+
+
+  </form>
+</div>
+
+<script type="text/javascript">
+  function preview_image(event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var output = document.getElementById('output-image')
+      output.src = reader.result;
+    }
+    reader.readAsDataURL(event.target.files[0]);
+  }
+</script>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+

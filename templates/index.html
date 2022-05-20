@@ -1,0 +1,220 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+
+
+<div class="main-agile">
+	<div class="slider">
+		<div class="agile-top">
+			<div class="col-xs-4 logo" >
+				<h1>
+					<a href="index.html" style="color:black" >
+
+						<span>A</span>gro <span>P</span>ro
+						</a>
+				</h1>
+			</div>
+
+			<div class="col-xs-2 menu">
+				
+					<span class="navClosed"></span>
+				</a>
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					  <ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+						  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+							Services⮛
+						  </a>
+						  <div class="dropdown-menu" >
+							<a class="dropdown-item" href="#">crop recommendation</a>
+							<a class="dropdown-item" href="#">fertilizer recommendation</a>
+							<a class="dropdown-item" href="#">disease Detection</a>
+						  </div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact Us</a>
+						  </li>
+						
+					  </ul>
+					  
+					</div>
+				  </nav>
+			</div>
+			
+<div class="callbacks_container">
+	<ul class="rslides callbacks callbacks1" id="slider4">
+		<li>
+			<div class="w3layouts-banner-top banner">
+				<div class="container">
+					<div class="agileits-banner-info">
+						<h3>Save The World</h3>
+							<p>Save the trees<i class="fa fa-tree" aria-hidden="true"></i> they will save you</p>
+								<div class="thim-click-to-bottom">
+									<a href="#about" class="scroll"><i class="fa  fa-chevron-down"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>				
+		</ul>
+	</div>
+
+
+				<br><br>
+<div class="banner-bottom-w3l" id="about">
+	<div class="container">
+		<div class="title-div">
+			<h3 class="tittle">
+				<span>W</span>elcome</h3>
+					<div class="tittle-style">
+						</div>
+						<p>Welcome to AgroPro(One Stop Solution to Whole Plant Life Cycle) Where we facilite Farmer for their whole Plant/Crop Life Cycle and Help them for better Growth of their Crops/Plants. </p>
+						</div>
+						<div class="welcome-sub-wthree">
+							<div class="col-md-5 banner_bottom_left">
+								<h4>About
+									<span>AgroPro</span>
+								</h4>
+								<p>AgroPro is called a One Stop Solution to Whole Plant Life Cycle which facilitates farmers to Grow Good Quality Crops and Plants.</p>
+								<p>AgroPro is the place where Farmers and Agriculture Offices/Agencies will find an Easy Way to Facilitate better Growth of 
+									Crops/ Plants in their respective Life-Cycle. AgroPro provides 4 major facilities which are Crop Recommendation, 
+									Disease Detection, Fertilizer Suggestion and Price Prediction.</p>
+								<h6 class="w3l-style">Agro Pro</h6>
+							</div>
+							<!-- Stats-->
+							<div class="col-md-7 stats-info-agile">
+								<div class="w3l-right-stats">
+									<div class="stats-grid stat-border">
+										<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='768' data-delay='.5' data-increment="1">768</div>
+										<p>Crop Recommended</p>
+									</div>
+									<div class="stats-grid">
+										<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='678' data-delay='.5' data-increment="1">678</div>
+										<p>Disease Detected</p>
+									</div>
+									<div class="stats-grid stat-border border-st2">
+										<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='800' data-delay='.5' data-increment="1">800</div>
+										<p>Fertilizer Suggested</p>
+									</div>
+								</div>
+							</div>
+							<!-- //Stats -->
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+				<!-- //about -->
+
+
+<!-- //video section -->
+
+
+<!-- Products & Services -->
+<section class="blog py-5">
+	<div class="container py-md-5">
+		<h3 class="tittle">
+			<span>S</span>ervices
+		</h3>
+		<div class="row blog-grids">
+			<div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+				<img src="{{ url_for('static', filename='images/s3.jpg') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('crop_recommend') }}">
+					<div class="blog-info">
+
+						<h4>Crop</h4>
+
+						<p class="mt-2"> Recommend optimum crops to be cultivated by farmers based on several parameters and help them make an informed decision before cultivation.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+				<img src="{{ url_for('static', filename='images/s2.jpg') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('fertilizer_recommendation') }}">
+					<div class="blog-info">
+						<h4>Fertilizer</h4>
+						<p class="mt-2">Recommend effective Fertilizer based on several parameters and help farmers to grow good quality crops and also help them to maintain crops growth.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+
+				<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="img-fluid" alt="">
+
+				<!-- <img src="images/s4.jpg" class="img-fliud" alt="" /> -->
+				<a href="{{ url_for('disease_prediction') }}">
+					<div class="blog-info">
+						<h4>Crop Disease</h4>
+						<p class="mt-2">Detect the disease based on pictures uploaded by the farmer and help them to detect and cure it as soon as possible also help them to save crop early..</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="what-w3ls">
+	<div class="container">
+		<div class="title-div">
+			<h3 class="tittle">
+				<span>W</span>e are expert in
+			</h3>
+			<div class="tittle-style">
+			</div>
+		</div>
+		<div class="what-grids">
+			<div class="col-md-6 what-grid">
+				<img src="{{ url_for('static', filename='images/work.png') }}" class="img-responsive" alt="" />
+			</div>
+			<div class="col-md-6 what-grid1">
+				<div class="what-top">
+					<div class="what-left">
+						<i class="fa fa-check" aria-hidden="true"></i>
+					</div>
+					<div class="what-right">
+						<h4>Crop Recommendation</h4>
+						<p>Our System has a Big Success ratio in Crop Recommendation where Crops are Predicted 
+							based on user input and with Good Accuracy, we are able to Predict Sustainable Crops.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="what-top1">
+					<div class="what-left">
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+					</div>
+					<div class="what-right">
+						<h4>Disease Detection</h4>
+						<p>Disease Detection Facility has a Success ratio of more than 80%  where We Facilitate Farmers or 
+							Agriculture Agencies to Detect Diseases on Growing Crops or Plants based on Live /Uploaded Pictures.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="what-top1">
+					<div class="what-left">
+						<i class="fa fa-leaf" aria-hidden="true"></i>
+					</div>
+					<div class="what-right">
+						<h4>Fertilizer Suggestion</h4>
+						<p>Fertilizer Suggestion is one of the Top Facilities used by the Users Very Often. This Facility's Success ratio is 
+							3/4 Where The System Suggests Fertilizer to Farmer or Agencies or User based on Soil inputs and Provide output with Good Accuracy.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //experts section -->
+
+{% endblock %}
